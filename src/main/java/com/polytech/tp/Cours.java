@@ -10,7 +10,7 @@ public class Cours implements ICours {
     private String niveau;
     private boolean necessiteProjecteur;
 
-    
+    // Constructeur PUBLIC (le test l'utilise encore)
     public Cours(String matiere, String enseignant, String salle, String date, 
                  String heureDebut, boolean estOptionnel, String niveau, boolean necessiteProjecteur) {
         this.matiere = matiere;
@@ -32,7 +32,6 @@ public class Cours implements ICours {
     public double getDuree() {
         return 1.5; 
     }
-    
     
     public String getMatiere() { return matiere; }
     public String getEnseignant() { return enseignant; }
